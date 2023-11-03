@@ -365,13 +365,25 @@
             <div class="subscribe">
                 <p class="subscribe-title">Subscribe</p>
                 <form class="subscribe-form">
-                    <input type="email">
-                    <button type="submit">Subscribe</button>
+                    <input 
+                    class="subscribe-field" 
+                    type="email" 
+                    placeholder="E-mail"
+                    neme="subscribe_email"
+                    required>
+                    <button 
+                    class="subscribe-btn" 
+                    type="submit">
+                    Subscribe
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-fly"></use>
+                    </svg>
+                    </button>
                 </form>
             </div>
         </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
             <button 
             class="modal-close-btn"
@@ -441,19 +453,23 @@
                     placeholder="Text input"></textarea>
                 </div>
                 <div class="modal-form-checkbox-wrapper">
-                    <input class="modal-form-checkbox" 
+                    <input class="modal-form-checkbox visually-hidden" 
                     type="checkbox"
                     name="user_accept_terms"
                     id="user-accept-terms"
                     value="true"
                     required>
                     <label class="modal-form-checkbox-label" for="user-accept-terms">
+                        <span class="modal-form-own-checkbox">
+                            <svg class="modal-form-own-checkbox-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                        </span>
                         I accept the terms and conditions of the 
                         <a class="modal-form-checkbox-link" href="">Privacy Policy</a>
                     </label>
-                    <button class="modal-form-btn" type="submit">Send</button>
-
                 </div>
+                <button class="modal-form-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
