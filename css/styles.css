@@ -497,10 +497,6 @@ body {
 
 }
 
-.subscribe {
-
-}
-
 .subscribe-title {
     font-size: 16px;
     font-weight: 500;
@@ -520,13 +516,18 @@ body {
     height: 40px;
     border-radius: 4px;
     border: 1px solid #FFFFFF;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2.0;
+    letter-spacing: 0.04rem;
     background-color: #2E2F42;
+    color: #FFFFFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     
 }
 
 .subscribe-field::placeholder {
-    padding: 8px 16px;
     font-size: 12px;
     font-weight: 400;
     line-height: 2.0;
@@ -541,12 +542,22 @@ body {
     border: none;
     border-radius: 4px;
     background: #4D5AE5;
-    padding: 8px 24px;
-    /* text-align: center; */
+    padding: 0;
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: #FFFFFF;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-icon {
+    margin-left: 16px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background: #404BBF;
 }
 /* ============ /footer ============ */
 
