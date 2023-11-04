@@ -365,25 +365,27 @@
             <div class="subscribe">
                 <p class="subscribe-title">Subscribe</p>
                 <form class="subscribe-form">
-                    <input 
-                    class="subscribe-field" 
-                    type="email" 
-                    placeholder="E-mail"
-                    name="subscribe_email"
-                    required>
+                    <label class="subscribe-label">
+                        <input 
+                        class="subscribe-field" 
+                        type="email"
+                        placeholder="E-mail"
+                        name="subscribe-email"
+                        required>
+                    </label>
                     <button 
-                    class="subscribe-btn" 
-                    type="submit">
-                    Subscribe
-                    <svg class="subscribe-btn-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-fly"></use>
-                    </svg>
-                    </button>
+                        class="subscribe-btn" 
+                        type="submit">
+                        Subscribe
+                        <svg class="subscribe-btn-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-fly"></use>
+                        </svg>
+                        </button>
                 </form>
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
             <button 
             class="modal-close-btn"
@@ -402,12 +404,12 @@
                         <input 
                         class="modal-form-field" 
                         type="text" 
-                        name="user_name" 
+                        name="user-name" 
                         id="user-name"
                         required
                         pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙ']+"
                         title="Ivan">
-                        <svg class="modal-form-field-icon" width="18" height="18">
+                        <svg class="modal-form-field-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg></div>
                 </div>
@@ -443,25 +445,25 @@
                     </svg>
                     </div>
                 </div>
-                <div class="modal-form-field-wrapper">
+                <div class="modal-form-comment-wrapper">
                     <label class="modal-form-field-label" for="user-comment">
                         Comment
                     </label>
                     <textarea class="modal-form-comment" 
-                    name="user_comment" 
+                    name="user-comment" 
                     id="user-comment" 
                     placeholder="Text input"></textarea>
                 </div>
                 <div class="modal-form-checkbox-wrapper">
                     <input class="modal-form-checkbox visually-hidden" 
                     type="checkbox"
-                    name="user_accept_terms"
-                    id="user-accept-terms"
+                    name="user-privacy"
+                    id="user-privacy"
                     value="true"
                     required>
-                    <label class="modal-form-checkbox-label" for="user-accept-terms">
+                    <label class="modal-form-checkbox-label" for="user-privacy">
                         <span class="modal-form-own-checkbox">
-                            <svg class="modal-form-own-checkbox-icon" width="16" height="16">
+                            <svg class="modal-form-own-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkmark"></use>
                             </svg>
                         </span>
